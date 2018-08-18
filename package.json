@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-loader": "^8.0.0-beta.4",
     "deep-get-set": "^1.1.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -14,7 +15,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test:watch": "npm test -- --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-core": "6",
+    "webpack-bundle-analyzer": "^2.13.1"
   }
 }
